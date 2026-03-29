@@ -1,0 +1,58 @@
+name: teacher_ai_app
+description: Teacher AI - Offline Teaching Assistant for School Teachers
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI and State Management
+  cupertino_icons: ^1.0.2
+  
+  # Storage and Preferences
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Image and File Handling
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+  
+  # Voice and Audio
+  record: ^5.0.4
+  permission_handler: ^11.0.1
+  
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  
+  # Cactus AI Integration (would be added when integrating real Cactus)
+  # cactus: ^1.0.0  # This would be the actual Cactus Flutter package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
